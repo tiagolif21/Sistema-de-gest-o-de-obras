@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2ecc71;
+  --sidebar-bg: #34495e;
+  --background-color: #f7f9fb;
+  --text-color: #555;
+  --card-bg: #ffffff;
+  --border-color: #ecf0f1;
+
+  /* Sistema de Escala de Tipografia */
+  --font-size-base: 14px;
+  --font-size-sm: 12px;
+  --font-size-lg: 16px;
+  --font-size-xl: 22px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base); /* Define a fonte base */
+}
+
+#root {
+  height: 100%;
+}
+
+/* Reset de estilos de botões para aplicar o design system depois */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Estilos de Botão Reutilizáveis */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; /* Para casos onde o Link é usado como botão */
+  display: inline-block; /* Para Links */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(46, 204, 113, 0.1);
+  transform: translateY(-1px);
+}
