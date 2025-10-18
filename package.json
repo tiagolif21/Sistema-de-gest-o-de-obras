@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tiagolif21.github.io/Sistema-de-gest-o-de-obras",
+  "homepage": "https://github.com/tiagolif/sistema-orcamentos-react.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
